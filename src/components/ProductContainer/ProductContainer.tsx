@@ -1,10 +1,10 @@
 import React from "react";
 import { Breadcrumb } from "antd";
-import "./ProductDisplayContainer.css";
+import "./ProductContainer.css";
 import ProductImageSection from "../ProductImageSection/ProductImageSection";
 import ProductDetailsSection from "../ProductDetailsSection/ProductDetailsSection";
 
-const ProductDisplayContainer: React.FC = () => (
+const ProductContainer: React.FC = () => (
   <div className='product_page_container'>
     <Breadcrumb
       items={[
@@ -27,4 +27,4 @@ const ProductDisplayContainer: React.FC = () => (
   </div>
 );
 
-export default ProductDisplayContainer;
+export default ProductContainer;

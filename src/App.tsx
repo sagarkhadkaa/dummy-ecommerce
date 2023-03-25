@@ -1,7 +1,7 @@
 import "./App.css";
 import AnnouncementBanner from "./components/AnnouncementBanner";
 import Navbar from "./components/Navbar/Navbar";
-import ProductDisplaySection from "./components/ProductDisplayContainer/ProductDisplayContainer";
+import ProductContainer from "./components/ProductContainer/ProductContainer";
 import { ChakraProvider } from "@chakra-ui/react";
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <ChakraProvider>
       <AnnouncementBanner />
       <Navbar />
-      <ProductDisplaySection />
+      <ProductContainer />
     </ChakraProvider>
   );
 }

@@ -1,0 +1,19 @@
+.product_detail_container {
+  margin-left: 40px;
+}
+.product_title_section {
+  /* font-size: 20px; */
+}
+div {
+  font-family: "Sana Sans Regular";
+}
+
+.review_section {
+  display: flex;
+  align-items: center;
+}
+
+.review_section > div {
+  display: inline-flex;
+  margin-right: 5px;
+}

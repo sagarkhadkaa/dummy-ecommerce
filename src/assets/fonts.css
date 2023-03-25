@@ -2,13 +2,19 @@
   font-family: "Sagona";
   src: url("./SAGONABOOK.TTF"),
     url("https://fonts.cdnfonts.com/css/sagona") format(".TTF");
-  font-weight: normal;
-  font-style: normal;
+  /* font-weight: normal; */
+  /* font-style: normal; */
   font-display: swap;
 }
 @font-face {
   font-family: "PragmaticBlack";
   src: url("./PragmaticaBlack.otf");
-  font-weight: normal;
+  /* font-weight: normal; */
+  font-style: normal;
+}
+@font-face {
+  font-family: "Sana Sans Regular";
+  src: url("./Sana\ Sans\ Alt\ W00\ Regular.ttf");
+  /* font-weight: normal; */
   font-style: normal;
 }
