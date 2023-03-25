@@ -27,3 +27,12 @@ div {
 .purchase_section {
   margin-top: 20px;
 }
+
+.cart_button {
+  background-color: #ab141d;
+  color: #fff;
+  font-family: "Sagona";
+  font-size: 24px;
+  padding: 5px 50px;
+  height: 100%;
+}

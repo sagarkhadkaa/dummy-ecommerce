@@ -1,9 +1,11 @@
-import { Box, Flex, Heading, ListItem, UnorderedList } from "@chakra-ui/react";
+import { Flex, Heading, ListItem, UnorderedList } from "@chakra-ui/react";
 import { AiFillStar } from "react-icons/ai";
 import { Text } from "@chakra-ui/react";
 import BulletListItem from "../BulletListItem/BulletListItem";
 import "./ProductDetailsSection.css";
 import BuyingOption from "../BuyingOption/BuyingOption";
+import QuantityBox from "../QuantityBox/QuantityBox";
+import { Button } from "antd";
 
 const items = [
   "Perfect for sipping sa an afternoon pick-me-up",
@@ -22,6 +24,25 @@ const BuyingOptionArray = [
     price: "$38.34",
   },
 ];
+const QuantityArray = [
+  {
+    text: "1-Pack",
+    price: "$7.99/carton",
+  },
+  {
+    text: "6-Pack",
+    price: "$7.99/carton",
+  },
+  {
+    text: "12-Pack",
+    price: "$7.76/carton",
+  },
+  {
+    text: "18-Pack",
+    price: "$7.49/carton",
+  },
+];
+
 export default function ProductDetailsSection() {
   return (
     <div className='product_detail_container'>
@@ -67,7 +88,28 @@ export default function ProductDetailsSection() {
               </div>
             ))}
           </Flex>
+          <Text color='#555147' mt='4'>
+            <strong>QUANTITY</strong>
+          </Text>
+          <Flex className='quantity_option_box'>
+            {QuantityArray.map((item, index) => (
+              <div>
+                <QuantityBox
+                  text={item.text}
+                  price={item.price}
+                  index={index}
+                />
+              </div>
+            ))}
+          </Flex>
         </div>
+
+        <Flex mt='6' justifyContent='space-around' alignItems='baseline'>
+          <Text sx={{ fontSize: 24 }}>
+            <strong>$47.94</strong>
+          </Text>
+          <Button className='cart_button'>Add to Cart</Button>
+        </Flex>
       </div>
     </div>
   );
