@@ -17,3 +17,13 @@ div {
   display: inline-flex;
   margin-right: 5px;
 }
+
+.buying_option_box {
+  display: flex;
+  justify-content: flex-start;
+  padding-right: 20px;
+}
+
+.purchase_section {
+  margin-top: 20px;
+}

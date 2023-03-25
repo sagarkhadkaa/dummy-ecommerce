@@ -1,7 +1,9 @@
-import "./ProductDetailsSection.css";
-import { Box, Heading, ListItem, UnorderedList } from "@chakra-ui/react";
-import { AiOutlineCheckCircle, AiFillStar } from "react-icons/ai";
+import { Box, Flex, Heading, ListItem, UnorderedList } from "@chakra-ui/react";
+import { AiFillStar } from "react-icons/ai";
 import { Text } from "@chakra-ui/react";
+import BulletListItem from "../BulletListItem/BulletListItem";
+import "./ProductDetailsSection.css";
+import BuyingOption from "../BuyingOption/BuyingOption";
 
 const items = [
   "Perfect for sipping sa an afternoon pick-me-up",
@@ -10,14 +12,17 @@ const items = [
   "Low carb, rich in collagen, no sugar, all clean ingredients",
   "Quick and convenient, ready in 5 minutes",
 ];
+const BuyingOptionArray = [
+  {
+    text: "ONE TIME PURCHASE",
+    price: "$47.94",
+  },
+  {
+    text: "SUBSCRIBE & SAVE",
+    price: "$38.34",
+  },
+];
 export default function ProductDetailsSection() {
-  const BulletListItem = ({ children }: any) => (
-    <Box display='flex' alignItems='center' padding='2'>
-      <AiOutlineCheckCircle color='none' size='20px' />
-      <Text style={{ marginLeft: "5px" }}>{children}</Text>
-    </Box>
-  );
-
   return (
     <div className='product_detail_container'>
       <div className='product_title_section'>
@@ -46,6 +51,22 @@ export default function ProductDetailsSection() {
               </ListItem>
             ))}
           </UnorderedList>
+        </div>
+        <div className='purchase_section'>
+          <Text color='#555147'>
+            <strong>BUYING OPTIONS</strong>
+          </Text>
+          <Flex className='buying_option_box'>
+            {BuyingOptionArray.map((item, index) => (
+              <div>
+                <BuyingOption
+                  text={item.text}
+                  price={item.price}
+                  index={index}
+                />
+              </div>
+            ))}
+          </Flex>
         </div>
       </div>
     </div>

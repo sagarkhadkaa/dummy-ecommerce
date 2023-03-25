@@ -1,6 +1,7 @@
 .product_page_container {
   background-color: #fdf9ed;
   padding-top: 40px;
+  padding-bottom: 100px;
 }
 .breadcrumb_section {
   padding-left: 20px !important;

@@ -1,0 +1,28 @@
+.buying_option_container {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.buying_option_container.active {
+  border: 2px solid #935158;
+}
+
+@media screen and (max-width: 1536px) {
+  .buying_option_container {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .buying_option_container {
+    width: 190px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .buying_option_container {
+    width: 160px;
+    margin-left: 5px !important;
+    padding: 8px !important;
+  }
+  .buying_option_text {
+    font-size: 0.75rem !important;
+  }
+}
