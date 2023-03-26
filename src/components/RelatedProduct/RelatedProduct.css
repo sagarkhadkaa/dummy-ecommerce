@@ -1,0 +1,16 @@
+.products_container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 80px;
+  justify-content: center;
+}
+@media screen and (max-width: 480px) {
+  .products_container {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .products_container {
+    padding: 20px;
+  }
+}

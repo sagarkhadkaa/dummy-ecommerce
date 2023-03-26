@@ -4,6 +4,7 @@ import ProductContainer from "./components/ProductContainer/ProductContainer";
 import { ChakraProvider } from "@chakra-ui/react";
 import AnnouncementBanner from "./components/AnnouncementBanner/AnnouncementBanner";
 import "../src/assets/fonts.css";
+import RelatedProduct from "./components/RelatedProduct/RelatedProduct";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <AnnouncementBanner />
       <Navbar />
       <ProductContainer />
+      <RelatedProduct />
     </ChakraProvider>
   );
 }
