@@ -1,0 +1,19 @@
+.announcement_banner {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ffe8b6;
+  padding: 20px;
+  font-family: "Sagona";
+  font-weight: bold;
+  color: #715a24;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 400px) {
+  .announcement_banner {
+    padding: 15px;
+  }
+}

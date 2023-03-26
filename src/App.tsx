@@ -1,8 +1,9 @@
 import "./App.css";
-import AnnouncementBanner from "./components/AnnouncementBanner";
 import Navbar from "./components/Navbar/Navbar";
 import ProductContainer from "./components/ProductContainer/ProductContainer";
 import { ChakraProvider } from "@chakra-ui/react";
+import AnnouncementBanner from "./components/AnnouncementBanner/AnnouncementBanner";
+import "../src/assets/fonts.css";
 
 function App() {
   return (

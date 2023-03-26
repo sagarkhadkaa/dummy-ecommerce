@@ -4,7 +4,7 @@
 .product_title_section {
   /* font-size: 20px; */
 }
-div {
+.product_detail_container > div {
   font-family: "Sana Sans Regular";
 }
 
