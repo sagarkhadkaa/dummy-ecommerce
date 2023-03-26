@@ -6,6 +6,7 @@ import AnnouncementBanner from "./components/AnnouncementBanner/AnnouncementBann
 import "../src/assets/fonts.css";
 import RelatedProduct from "./components/RelatedProduct/RelatedProduct";
 import FrequentlyAskedQuestion from "./components/FrequentlyAskedQuestion/FrequentlyAskedQuestion";
+import CustomerFeedbackSection from "./components/CustomerFeedbackSection/CustomerFeedbackSection";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <ProductContainer />
       <RelatedProduct />
       <FrequentlyAskedQuestion />
+      <CustomerFeedbackSection />
     </ChakraProvider>
   );
 }

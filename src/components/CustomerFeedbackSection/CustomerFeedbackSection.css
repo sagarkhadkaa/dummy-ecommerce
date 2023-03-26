@@ -1,0 +1,27 @@
+.customer_feedback_container {
+  border-top: 1px solid #dbdbdb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 100px 0 50px 0;
+  font-family: "Sagona" !important;
+  margin-bottom: 50px;
+}
+.customer_feedback_container * {
+  font-family: inherit !important;
+}
+.feedback_heading {
+  font-size: xx-large;
+}
+.carousel-container {
+  margin-top: 60px;
+}
+.customer_feedback_item {
+  padding: 0 40px;
+}
+@media screen and (max-width: 400px) {
+  .feedback_heading {
+    font-size: 24px !important;
+  }
+}
