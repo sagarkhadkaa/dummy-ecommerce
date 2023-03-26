@@ -3,6 +3,7 @@ import { Breadcrumb } from "antd";
 import "./ProductContainer.css";
 import ProductImageSection from "../ProductImageSection/ProductImageSection";
 import ProductDetailsSection from "../ProductDetailsSection/ProductDetailsSection";
+import ProductFooter from "../ProductFooter/ProductFooter";
 
 const ProductContainer: React.FC = () => (
   <div className='product_page_container'>
@@ -24,6 +25,7 @@ const ProductContainer: React.FC = () => (
       <ProductImageSection />
       <ProductDetailsSection />
     </div>
+    <ProductFooter />
   </div>
 );
 
