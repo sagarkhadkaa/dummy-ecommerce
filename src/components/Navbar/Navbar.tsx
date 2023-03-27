@@ -13,13 +13,17 @@ import {
   Box,
   AccordionIcon,
   AccordionPanel,
+  Menu,
+  MenuButton,
+  MenuItem,
+  MenuList,
 } from "@chakra-ui/react";
 import { IconButton } from "@chakra-ui/react";
 import "./Navbar.css";
-import { BiChevronDown } from "react-icons/bi";
 import { AiOutlineMenu } from "react-icons/ai";
 import NavbarIconGroup from "../common/NavbarIconGroup";
 import NavbarDrawerButtonGroup from "../common/NavbarDrawerButtonGroup";
+import { BsChevronDown } from "react-icons/bs";
 
 export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -27,9 +31,22 @@ export default function Navbar() {
   return (
     <nav className='navbar'>
       <div className='navbar_left'>
-        <Button variant='ghost' rightIcon={<BiChevronDown />}>
-          Shop
-        </Button>
+        <Menu>
+          <MenuButton as={Button} rightIcon={<BsChevronDown />} variant='ghost'>
+            Shop
+          </MenuButton>
+          <MenuList>
+            <MenuItem fontSize='md' fontWeight='semibold'>
+              Electronic Store
+            </MenuItem>
+            <MenuItem fontSize='md' fontWeight='semibold'>
+              Grocery Store
+            </MenuItem>
+            <MenuItem fontSize='md' fontWeight='semibold'>
+              Marketplace
+            </MenuItem>
+          </MenuList>
+        </Menu>
         <Button variant='ghost'>Bundles</Button>
         <Button variant='ghost'>Subscribe & Save</Button>
       </div>
@@ -37,9 +54,22 @@ export default function Navbar() {
         <h1>DUMMY</h1>
       </div>
       <div className='navbar_right'>
-        <Button variant='ghost' rightIcon={<BiChevronDown />}>
-          Learn
-        </Button>
+        <Menu>
+          <MenuButton as={Button} rightIcon={<BsChevronDown />} variant='ghost'>
+            Learn
+          </MenuButton>
+          <MenuList>
+            <MenuItem fontSize='md' fontWeight='semibold'>
+              About Electronic
+            </MenuItem>
+            <MenuItem fontSize='md' fontWeight='semibold'>
+              About Grocery
+            </MenuItem>
+            <MenuItem fontSize='md' fontWeight='semibold'>
+              About Marketplace
+            </MenuItem>
+          </MenuList>
+        </Menu>
         <Button variant='ghost'>About Us</Button>
         <NavbarIconGroup />
       </div>
@@ -93,9 +123,9 @@ export default function Navbar() {
                     </AccordionButton>
                   </h2>
                   <AccordionPanel pb={4} style={{ textAlign: "center" }}>
-                    <Button variant='ghost'>Electronic Store</Button>
-                    <Button variant='ghost'>Grocery Store</Button>
-                    <Button variant='ghost'>Marketplace</Button>
+                    <Button variant='ghost'>About Electronic</Button>
+                    <Button variant='ghost'>About Grocery </Button>
+                    <Button variant='ghost'>About Marketplace</Button>
                   </AccordionPanel>
                 </AccordionItem>
               </Accordion>

@@ -13,14 +13,11 @@ export default function BuyingOption(props: Props) {
   const handleBoxClick = (index: any) => {
     setSelectedBox(index);
     setBuyingOptionClick(true);
-    console.log(buyingOptionClick);
   };
   return (
     <div>
       <Box
         width={{
-          //   base: "100px",
-          //   sm: "120px",
           md: "180px",
           lg: "220px",
           xl: "300px",
