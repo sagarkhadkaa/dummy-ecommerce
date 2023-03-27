@@ -11,6 +11,10 @@
   text-align: center;
   cursor: pointer;
 }
+.chat_icon_button {
+  color: red !important;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+}
 
 @media screen and (max-width: 400px) {
   .announcement_banner {
