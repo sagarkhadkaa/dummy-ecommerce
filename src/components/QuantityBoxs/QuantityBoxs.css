@@ -6,6 +6,10 @@
   border: 2px solid #935158;
 }
 
+.quantity_option_price {
+  font-size: 0.75rem !important;
+}
+
 @media screen and (max-width: 1536px) {
   .quantity_option_container {
     width: 120px;
@@ -15,9 +19,11 @@
   .quantity_option_container {
     width: 100px;
   }
-  .quantity_option_text,
-  .quantity_option_price {
+  .quantity_option_text {
     font-size: 0.8rem !important;
+  }
+  .quantity_option_price {
+    font-size: 0.6rem !important;
   }
 }
 @media screen and (max-width: 480px) {

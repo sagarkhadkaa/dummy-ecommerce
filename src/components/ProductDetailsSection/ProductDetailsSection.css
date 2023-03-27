@@ -1,8 +1,6 @@
 .product_detail_container {
   margin-left: 40px;
-}
-.product_title_section {
-  /* font-size: 20px; */
+  padding-right: 20px;
 }
 .product_detail_container > div {
   font-family: "Sana Sans Regular";

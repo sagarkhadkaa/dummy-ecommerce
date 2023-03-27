@@ -4,7 +4,7 @@ import { Text } from "@chakra-ui/react";
 import BulletListItem from "../BulletListItem/BulletListItem";
 import "./ProductDetailsSection.css";
 import BuyingOption from "../BuyingOption/BuyingOption";
-import QuantityBox from "../QuantityBox/QuantityBox";
+import QuantityBoxs from "../QuantityBoxs/QuantityBoxs";
 import { Button } from "antd";
 
 const items = [
@@ -22,24 +22,6 @@ const BuyingOptionArray = [
   {
     text: "SUBSCRIBE & SAVE",
     price: "$38.34",
-  },
-];
-const QuantityArray = [
-  {
-    text: "1-Pack",
-    price: "$7.99/carton",
-  },
-  {
-    text: "6-Pack",
-    price: "$7.99/carton",
-  },
-  {
-    text: "12-Pack",
-    price: "$7.76/carton",
-  },
-  {
-    text: "18-Pack",
-    price: "$7.49/carton",
   },
 ];
 
@@ -91,17 +73,7 @@ export default function ProductDetailsSection() {
           <Text color='#555147' mt='4'>
             <strong>QUANTITY</strong>
           </Text>
-          <Flex className='quantity_option_box'>
-            {QuantityArray.map((item, index) => (
-              <div>
-                <QuantityBox
-                  text={item.text}
-                  price={item.price}
-                  index={index}
-                />
-              </div>
-            ))}
-          </Flex>
+          <QuantityBoxs />
         </div>
 
         <Flex mt='6' justifyContent='space-around' alignItems='baseline'>
