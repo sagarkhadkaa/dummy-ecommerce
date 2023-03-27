@@ -5,7 +5,6 @@ import BulletListItem from "../BulletListItem/BulletListItem";
 import "./ProductDetailsSection.css";
 import BuyingOptions from "../BuyingOptions/BuyingOptions";
 import QuantityBoxs from "../QuantityBoxs/QuantityBoxs";
-import { Button } from "antd";
 import { productDescriptionBullets } from "../../data/productDescriptionBullets";
 import CartAndPricing from "../CartAndPricing/CartAndPricing";
 
