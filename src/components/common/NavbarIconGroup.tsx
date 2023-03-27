@@ -1,4 +1,4 @@
-import { Button, IconButton } from "@chakra-ui/react";
+import { IconButton } from "@chakra-ui/react";
 import { BiSearch } from "react-icons/bi";
 import { FaUserAlt, FaShoppingCart } from "react-icons/fa";
 

@@ -1,4 +1,4 @@
-import { Box, Flex, Text } from "@chakra-ui/react";
+import { Box, Text } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import { buyingOptionArray } from "../../data/buyingOptionArray";
 import "./BuyingOptions.css";

@@ -1,4 +1,4 @@
-import { Flex, Heading, ListItem, UnorderedList } from "@chakra-ui/react";
+import { Heading, ListItem, UnorderedList } from "@chakra-ui/react";
 import { AiFillStar } from "react-icons/ai";
 import { Text } from "@chakra-ui/react";
 import BulletListItem from "../BulletListItem/BulletListItem";
