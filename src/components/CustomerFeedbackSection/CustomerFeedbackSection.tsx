@@ -39,8 +39,6 @@ export default function CustomerFeedbackSection() {
         infinite={true}
         transitionDuration={1000}
         customDot={null}
-        renderDotsOutside={true}
-        dotListClass='custom-dot-list'
         itemClass='custom-item'
         containerClass='carousel-container'
       >
