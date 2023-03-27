@@ -3,27 +3,10 @@ import { AiFillStar } from "react-icons/ai";
 import { Text } from "@chakra-ui/react";
 import BulletListItem from "../BulletListItem/BulletListItem";
 import "./ProductDetailsSection.css";
-import BuyingOption from "../BuyingOption/BuyingOption";
+import BuyingOptions from "../BuyingOptions/BuyingOptions";
 import QuantityBoxs from "../QuantityBoxs/QuantityBoxs";
 import { Button } from "antd";
-
-const items = [
-  "Perfect for sipping sa an afternoon pick-me-up",
-  "Decadently dairy-free keto confort food",
-  "Creamy, fat-forward, and filling",
-  "Low carb, rich in collagen, no sugar, all clean ingredients",
-  "Quick and convenient, ready in 5 minutes",
-];
-const BuyingOptionArray = [
-  {
-    text: "ONE TIME PURCHASE",
-    price: "$47.94",
-  },
-  {
-    text: "SUBSCRIBE & SAVE",
-    price: "$38.34",
-  },
-];
+import { productDescriptionBullets } from "../../data/productDescriptionBullets";
 
 export default function ProductDetailsSection() {
   return (
@@ -48,7 +31,7 @@ export default function ProductDetailsSection() {
             coconut.
           </Text>
           <UnorderedList styleType='none' ml='0'>
-            {items.map((item, index) => (
+            {productDescriptionBullets.map((item, index) => (
               <ListItem key={index}>
                 <BulletListItem>{item}</BulletListItem>
               </ListItem>
@@ -59,17 +42,7 @@ export default function ProductDetailsSection() {
           <Text color='#555147'>
             <strong>BUYING OPTIONS</strong>
           </Text>
-          <Flex className='buying_option_box'>
-            {BuyingOptionArray.map((item, index) => (
-              <div>
-                <BuyingOption
-                  text={item.text}
-                  price={item.price}
-                  index={index}
-                />
-              </div>
-            ))}
-          </Flex>
+          <BuyingOptions />
           <Text color='#555147' mt='4'>
             <strong>QUANTITY</strong>
           </Text>
