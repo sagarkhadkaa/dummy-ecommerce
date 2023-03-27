@@ -48,9 +48,10 @@ export default function BuyingOptions() {
       <div>
         <Box
           width={{
-            md: "180px",
+            sm: "200px",
+            md: "300px",
             lg: "220px",
-            xl: "300px",
+            xl: "280px",
           }}
           padding='4'
           margin='2'
@@ -78,7 +79,7 @@ export default function BuyingOptions() {
   }
 
   return (
-    <Flex>
+    <div className='buying_div_container'>
       {buyingOptionArray.map((item, index) => (
         <BuyingBoxItem
           key={index}
@@ -87,6 +88,6 @@ export default function BuyingOptions() {
           price={item.price}
         />
       ))}
-    </Flex>
+    </div>
   );
 }

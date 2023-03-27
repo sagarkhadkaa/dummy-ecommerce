@@ -47,9 +47,10 @@ export default function QuantityBox() {
     return (
       <Box
         width={{
-          md: "80px",
-          lg: "100px",
-          xl: "150px",
+          sm: "100px",
+          md: "120px",
+          lg: "120px",
+          xl: "100px",
         }}
         padding='1'
         margin='1'
@@ -76,7 +77,7 @@ export default function QuantityBox() {
   }
 
   return (
-    <Flex>
+    <div className='quantity_div_container'>
       {quantityArray.map((item, index) => (
         <QuantityBoxItem
           key={index}
@@ -85,6 +86,6 @@ export default function QuantityBox() {
           price={item.price}
         />
       ))}
-    </Flex>
+    </div>
   );
 }

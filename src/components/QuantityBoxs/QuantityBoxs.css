@@ -10,15 +10,7 @@
   font-size: 0.75rem !important;
 }
 
-@media screen and (max-width: 1536px) {
-  .quantity_option_container {
-    width: 120px;
-  }
-}
 @media screen and (max-width: 1140px) {
-  .quantity_option_container {
-    width: 100px;
-  }
   .quantity_option_text {
     font-size: 0.8rem !important;
   }
@@ -28,7 +20,6 @@
 }
 @media screen and (max-width: 480px) {
   .quantity_option_container {
-    width: 80px;
     margin-left: 2px !important;
     padding: 4px !important;
   }
@@ -36,4 +27,9 @@
   .quantity_option_price {
     font-size: 0.75rem !important;
   }
+}
+
+.quantity_div_container {
+  display: flex;
+  justify-content: space-between;
 }

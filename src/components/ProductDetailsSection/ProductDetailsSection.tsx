@@ -7,6 +7,7 @@ import BuyingOptions from "../BuyingOptions/BuyingOptions";
 import QuantityBoxs from "../QuantityBoxs/QuantityBoxs";
 import { Button } from "antd";
 import { productDescriptionBullets } from "../../data/productDescriptionBullets";
+import CartAndPricing from "../CartAndPricing/CartAndPricing";
 
 export default function ProductDetailsSection() {
   return (
@@ -49,12 +50,7 @@ export default function ProductDetailsSection() {
           <QuantityBoxs />
         </div>
 
-        <Flex mt='6' justifyContent='space-around' alignItems='baseline'>
-          <Text sx={{ fontSize: 24 }}>
-            <strong>$47.94</strong>
-          </Text>
-          <Button className='cart_button'>Add to Cart</Button>
-        </Flex>
+        <CartAndPricing />
       </div>
     </div>
   );

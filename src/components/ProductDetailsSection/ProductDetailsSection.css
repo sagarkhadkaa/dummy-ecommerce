@@ -1,7 +1,14 @@
 .product_detail_container {
   margin-left: 40px;
-  padding-right: 20px;
+  margin-right: 200px;
 }
+
+@media screen and (max-width: 1536px) {
+  .product_detail_container {
+    margin-right: 50px;
+  }
+}
+
 .product_detail_container > div {
   font-family: "Sana Sans Regular";
 }
@@ -24,13 +31,4 @@
 
 .purchase_section {
   margin-top: 20px;
-}
-
-.cart_button {
-  background-color: #ab141d;
-  color: #fff;
-  font-family: "Sagona";
-  font-size: 24px;
-  padding: 5px 50px;
-  height: 100%;
 }
